@@ -10,10 +10,10 @@
  * @author Kamyar
  */
 
-require_once dirname(__FILE__) . '/../utils/Utils.php';
+require_once 'application/libraries/REST_Controller.php';
 require_once dirname(__FILE__) . '/TicTacToeEngine.php';
 
-class TicTacToe extends Utils {
+class TicTacToe extends REST_Controller {
 
     public function index_post() {
         $arr = [
@@ -46,7 +46,7 @@ class TicTacToe extends Utils {
             }
         }
 
-        $this->output_json($arr);
+        utils_helper::returnJSON($this, $arr);
     }
 
 }
