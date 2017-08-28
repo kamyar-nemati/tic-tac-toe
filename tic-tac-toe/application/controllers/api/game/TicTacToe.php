@@ -11,7 +11,7 @@
  */
 
 require_once 'application/libraries/REST_Controller.php';
-require_once dirname(__FILE__) . '/TicTacToeEngine.php';
+require_once 'application/core/TicTacToeEngine.php';
 
 class TicTacToe extends REST_Controller {
 
